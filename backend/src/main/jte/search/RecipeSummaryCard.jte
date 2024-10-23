@@ -21,6 +21,18 @@
 
 <%--                            "normaler" Link--%>
                             href="/recipes/${recipe.id()}"
+                            hx-get="/recipes/${recipe.id()}"
+                            hx-push-url="/recipes/${recipe.id()}"
+
+
+                            <%--🤔 warum select="main"? --%>
+                            <%--🕵️‍♀️ Netzwerkverkehr --%>
+                            <%--🤔 Welche Alternative gäbe es dazu? --%>
+                            hx-select="main"
+                            hx-target="main"
+                            hx-swap="outerHTML"
+
+
 
                             <%--SCHRITT 1: Link "SPA-fähig" machen                             --%>
                             <%--                            sw1  --%>

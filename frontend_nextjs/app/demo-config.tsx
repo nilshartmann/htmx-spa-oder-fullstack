@@ -1,9 +1,9 @@
 // initial Demo Konfiguration::::::::::
 
-export const enableSuspenseForFeedback = false;
-export const slowDown_IncreaseLikes = 1200;
-export const slowDown_GetFeedbacks = 600;
-export const slowDown_GetRecipe = 0;
+export const enableSuspenseForFeedback = true;
+export const slowDown_IncreaseLikes = 3600;
+export const slowDown_GetFeedbacks = 3000;
+export const slowDown_GetRecipe = 2000;
 export const showNextLogoInHeader = false;
 // //////////////////////////////////////////////////////
 

@@ -18,4 +18,12 @@ public class HelloWorldController {
 
         hwc
      */
+    @GetMapping(value = "/hello-world", headers = "HX-Request")
+    String helloWorldResponse() {
+
+        // 🕵️‍♂️  Template angucken!
+        return "hello-world-response";
+    }
+
+
 }

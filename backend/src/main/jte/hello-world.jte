@@ -22,6 +22,9 @@
             <input type="checkbox"
                     <%-- hwa --%>
                     <%-- ... --%>
+                    hx-trigger="change"
+                                       hx-get="/hello-world"
+                                       hx-target="#more-info"
             />
             I want to know more!
         </label>
