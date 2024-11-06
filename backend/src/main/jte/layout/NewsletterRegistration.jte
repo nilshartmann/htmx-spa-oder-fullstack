@@ -7,14 +7,17 @@
         <%--        🕵️‍♀️ Formular-Struktur zeigen       --%>
         <%--         - 🔎 Netzwerkverkehr untersuchen --%>
         <%--        na1                               --%>
+        hx-post="/newsletter?slowdown=2400"
+                hx-swap="outerHTML"
 
         <%--        SCHRITT 2: Formular disablen     --%>
         <%--        ?slowdown=2400                   --%>
         <%--        na2                              --%>
-
+        hx-disabled-elt="this, input, button"
         <%--        SCHRITT 3: Loading Indicator     --%>
         <%--        🕵️‍♀️ div unten                     --%>
         <%--        na3                              --%>
+        hx-indicator="#newsletterLoading"
 
         <%--        SCHRITT 4: Zurücksetzen          --%>
         <%--        🤔 wie setzen wir das Formular zurück  --%>

@@ -20,7 +20,7 @@
                 value="${search}"
                 hx-swap="outerHTML"
                 hx-get="/search?slowdown=0"
-                hx-trigger="input[target.value.length > 2] changed delay:200ms"
+                hx-trigger="input[target.value.length > 2] changed"
                 hx-target="#searchResult"
                 hx-indicator="#searchIndicator"
                 hx-on:input="handleInputChange(event)"

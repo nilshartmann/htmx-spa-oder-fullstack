@@ -18,11 +18,11 @@
                 <h2 class="font-space text-2xl font-bold">
                     <a
                             class="cursor-pointer hover:text-orange_2 hover:underline"
-
-<%--                            "normaler" Link--%>
-                            <%--🤔 warum select="main"? --%>
-                            <%--🕵️‍♀️ Netzwerkverkehr --%>
-                            <%--🤔 Welche Alternative gäbe es dazu? --%>
+                            hx-get="/recipes/${recipe.id()}"
+                            hx-push-url="/recipes/${recipe.id()}"
+                            hx-select="main"
+                            hx-target="main"
+                            hx-swap="outerHTML"
 
 
                             <%--SCHRITT 1: Link "SPA-fähig" machen                             --%>
